@@ -1,215 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAVELEASE</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-    
-        
- 
-</head>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-<body>
-    <section class="header">
-    
-        <nav>
-            <a href="index.html"><img src="logo.jpg"></a>
-            <div class="nav-links" id="navlinks">
-                <i class="fa fa-times-circle" onclick="hidemenu()" ></i>
-                <ul>
-                    
-                    <li> <a href="index.html">HOME</a></li>
-                    <li> <a href="about.html">ABOUT</a></li>
-                    <li> <a href="places.html">PLACES</a></li>
-                    <li> <a href="blog.html">BLOG</a></li>
-                    <li> <a href="contact.html">CONTACT</a></li>
-                    
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showmenu()" ></i>
-        </nav>
-
-        <div class="text-box">
-            <h1>TRAVEL WITH EASE </h1>
-            <P>The world is a book and those who do not travel read only one page.”</P>
-            <a href="" class="main-btn" red-btn>VISIT US TO KNOW MORE</a>
-        </div>
-    
-    </section>
-
-
-    <!-----offering----->
-    <section class="places">
-        <h1> WHAT ARE OFFERING?</h1>
-        <p id="offer">“Not all those who wander are lost”</p>
-
-
-        <div class="row">
-        <div class="place-col">
-            <h3>FREE</h3>
-            <P>Flights, Flight+Hotel Deals, Flights Holidays in India.Cheap Tickets to India, Route Planner, Flight Status, Mobile Apps</P>
-        </div>
-
-        <div class="place-col">
-            <h3>INTERMEDIATE</h3>
-            <P>Flights, Flight+Hotel Deals, International Flights, Hotels, International Hotels, Holidays in India, 
-                International Holidays, myBiz for SME Travel, Cabs, Cheap Tickets to India,Bus Tickets, Rail, Route Planner, Flight Status, Mobile Apps</P>
-        </div>
-
-        <div class="place-col">
-            <h3>ADVANCE</h3>
-            <P>Low Budget Holidays, Delhi Mumbai Flights, Domestic Airlines, International Airlines, Indigo, Spicejet, Jet Airways, Air Asia, Air India, 
-            Delhi Hotels, Mumbai Hotels, Honeymoon Packages, Singapore Tours, Indian Railways, Kesineni Travels, Neeta Travels, RSRTC, Goa Packages, Thailand Packages,
-            Hotels Near Me, Cheap Hotels, Corporate Flight Booking, Corporate Hotels Booking</P>
-        </div>
-    </div>
-    </section>
-
-
-<!--------------places--------->
-
-    <section class="places">
-        <h1>PLACES YOU CAN VISIT!</h1>
-        <p id="wow">When I first travelled alone, I used to find every way to ensure that my travel was validated by writers,
-             bloggers and individuals who have journeyed landscapes to find themselves and find a thread of relatability.</p>
-    
-         <div class="row">
-             <div class="places-col">
-                 <img src="beach.jpg">
-                 <div class="layer">
-                 <h3>GOA</h3>
-             </div>
-         </div>
-                <div class="places-col">
-                    <img src="SHIMLA.jpg">
-                    <div class="layer">
-                    <h3>SHIMLA</h3>
-                </div>
-             </div>
-                <div class="places-col">
-                    <img src="kerala-tour.jpg">
-                    <div class="layer">
-                    <h3>KERELA</h3>
-                </div>
-            </div>
-        </div>
-    
-    
-    
-    
-            </section>
-
-           <!--------facilities------->
-           
-          <section class="facilities">
-              <h1>OUR FACILITIES</h1>
-              <P id="fac">Trippartner is one of the best stop to travellers for Hotels and Flights booking. Travellers can also complain here about there flight and hotel booking. Travelling
-                   Agency will help them out to resolve there complain and provide best support about their stay or journey.</P>
-             <div class="row">
-                 <div class="facilities-col">
-                     <img src="1.jpg">
-                     <h3>WORLD CLASS ROOMS</h3>
-                     <p>Affordable, friendly B&B Hotel next to Oxford St.See our lowest price guarantee. TV Available. 
-                         Radio Available. Free Wi-Fi Facility. Amenities: Tea/Coffee, TV, Free WiFi, Radio, Safe</p>
-                 </div>
-                 <div class="facilities-col">
-                    <img src="2.jpg">
-                    <h3>BEST FOOD</h3>
-                    <p>Nutritious & tasty meals from top restaurants & cafes. Free coupons! Discover Tasty Food.
-                         Instant Dining. Save Animal Lives. Healthy Meals. Types: Exclusive Deals, Dining Ideas, Free Coupons.</p>
-                </div>
-                <div class="facilities-col">
-                    <img src="3.jpg">
-                    <h3>AMUSING PARTIES</h3>
-                    <p>A lively, amusing person who is the center of attention at a social gathering. For example, Eileen was the life of the party,
-                         telling one good story after another. [ First half of 1800s] See also: life, of, party..</p>
-                </div>
-             </div>
-          </section> 
-
-<!-------testimonials------>
-<section class="testimonials">
-    <h3>WHAT OUR CUSTOMERS SAYS ?</h3>
-
-    <P id="test">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </P>
-     <div class="row">
-         <div class="testimonial-col">
-             <img src="t.jpg" >
-             <div>
-                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                      exercitation ullamco laboris  nisi ut aliquip ex ea commodo consequat. Duis aut</p>
-                    <h3>Christine</h3>
-                    <i class="fa fa-star" ></i>
-                    <i class="fa fa-star" ></i>
-                    <i class="fa fa-star" ></i>
-                    <i class="fa fa-star" ></i>
-                    <i class="fa fa-star" ></i>
-
-             </div>
-         </div>
-
-         <div class="testimonial-col">
-            <img src="b.jpg" >
-            <div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                     nisi ut aliquip ex ea commodo consequat. Duis aut</p>
-                   <h3>Chris</h3>
-                   <i class="fa fa-star" ></i>
-                   <i class="fa fa-star" ></i>
-                   <i class="fa fa-star" ></i>
-                   <i class="fa fa-star" ></i>
-            </div>
-        </div>
-     </div>
-   
-
-    </section>
-
-
-    <!-------call to action-->
-    <section class="cta">
-        <h1>TRY OUR VARIOUS PACKAGES TO EASE YOUR TRAVEL IN INDIA </h1>
-        <a href="" class="main-btn">CONTACT US</a>
-
-    </section>
- <!-------footer-->
- <section class="footer">
-     <h4>ABOUT US</h4>
-     <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua.<br>   Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-        nisi ut aliquip ex ea commodo consequat. Duis aut</P>
-        <div class="icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin-in"></i>
-
-        </div>
-        <p>Made with</p><i class="fas fa-heart"></i><p>khushboo nayak</p>
- </section>
-
-
-
-    <script>
-
-        var navlinks = document.getElementById("navlinks")
-        function showmenu(){
-            navlinks.style.right="0";
-        }
-        function hidemenu(){
-            navlinks.style.right="-200px";
-        }
-    </script>
-</body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
